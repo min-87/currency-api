@@ -1,7 +1,7 @@
 <?php
 /**
  * Написать калькулятор валют. Например php 8.php 100 USD. Ваш скрипт должен вывести сумму в евро,
- * 100 USD = 85 EUR
+ * 100 USD = 85 EUR. Если я ввёл неизвестную валюту, то вывести ошибку.
  */
 $currency_rates = json_decode(file_get_contents('https://api.exchangeratesapi.io/latest?base=EUR'),true);
 
